@@ -1,0 +1,151 @@
+:root {
+    --ivory: #F3F0E8;
+    --forest: #28362F;
+    --oak: #C9AD87;
+    --sage: #687C6A;
+    --white: #FFFFFF;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 5px 50px;
+    background-color: var(--ivory);
+}
+
+header h2 {
+    color: var(--forest);
+    font-size: 45px;
+}
+
+body {
+    margin: 0;
+    background-color: var(--ivory);
+    color: var(--forest);
+    font-family: Arial, sans-serif;
+}
+
+nav {
+    display: flex;
+    gap: 25px;
+}
+
+nav a {
+    color: var(--forest);
+    text-decoration: none;
+} 
+
+nav a:hover {
+    color: var(--sage);
+}
+
+.hero h1 {
+    font-size: 64px;
+    font-family: Georgia, serif;
+    margin-top: 0;
+}
+
+.hero {
+    background-image:
+    linear-gradient(to right, rgba(0, 0, 0, 0.55), transparent 55%),
+    url("images/Emerald AMG at Sunset Fjord.png");
+    min-height: 650px;
+    background-size: cover;
+    padding: 100px 50px;
+    background-position: 65% center;
+    color: var(--ivory);
+}
+
+.hero a {
+    display: inline-block;
+    background-color: var(--ivory);
+    color: var(--forest);
+    text-decoration: none;
+    padding: 15px 30px;
+    border-radius: 5px;
+}
+
+.hero a:hover {
+    background-color: var(--oak);
+}
+
+.hero p {
+    font-size: 24px;
+}
+
+.fleet {
+    padding: 40px 50px;
+}
+
+.fleet h2 {
+    font-size: 38px;
+    font-family: Georgia, serif;
+}
+
+.fleet-cards {
+    display: flex;
+    gap: 20px;
+}
+
+.car-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center bottom;
+}
+
+.car-card {
+    width: 33.33%;
+    height: 350px;
+    overflow: hidden;
+    position: relative;
+}
+
+.premium-card {
+    background-image:
+        linear-gradient(to right, rgba(0, 0, 0, 0.6), transparent 75%),
+        url("images/zeekr-001.png");
+    background-size: cover;
+    background-position: center;
+}
+
+.performance-card{
+    background-image:
+        linear-gradient(to right, rgba(0, 0, 0, 0.6), transparent 75%),
+        url("Images/Audi e-tron GT at Sunset.png");
+    background-size: cover;
+    background-position: center;
+}
+
+.exotic-card {
+    background-image:
+        linear-gradient(to right, rgba(0, 0, 0, 0.6), transparent 75%),
+        url("Images/pininfarina battista.png");
+    background-size: cover;
+    background-position: center;
+}
+
+.hero {
+    position: relative;
+}
+
+.hero-announcement {
+    position: absolute;
+    bottom: 30px;
+    left: 50px;
+}
+
+
+.car-card h3 {
+    position: absolute;
+    top: 15px;
+    left: 20px;
+    color: var(--ivory);
+    font-size: 30px;
+    z-index: 1;
+}
+
+
+
